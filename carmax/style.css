@@ -1,0 +1,304 @@
+:root {
+  --white: #ffffffff;
+  --rich-black: #00171fff;
+  --prussian-blue: #003459ff;
+  --cerulean: #007ea7ff;
+  --picton-blue: #00a8e8ff;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: var(--white);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  overflow: hidden;
+  background-color: #000;
+}
+
+/* inicio intro */
+
+#intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  position: relative;
+}
+
+.logo {
+  font-size: 4em;
+  transition: all 1s ease-in-out;
+  position: relative;
+}
+
+#letter-c {
+  color: var(--white);
+  transition: all 1s ease-in-out;
+  display: inline-block;
+  position: relative;
+  z-index: 2;
+}
+
+#rest {
+  transition: all 1s ease-in-out;
+  display: inline-block;
+}
+
+#corner-logo {
+  position: fixed;
+  top: 20px;
+  left: 75px;
+  font-size: 2em;
+  color: var(--white);
+  display: none;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  z-index: 10;
+}
+
+#main-content {
+  display: none;
+  padding: 40px;
+  text-align: center;
+}
+
+/* fim intro */
+
+/* inicio carrosel imagens */
+
+.carrossel {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  animation: fade 18s infinite;
+}
+
+.slide1 {
+  background-image: url("../carmax/imagens/vingadores.png");
+  animation-delay: 0s;
+}
+
+.slide2 {
+  background-image: url("../carmax/imagens/oppenheimer.png");
+  animation-delay: 6s;
+}
+
+.slide3 {
+  background-image: url("../carmax/imagens/duna\ 2.png");
+  animation-delay: 12s;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* fim carrosel imagens */
+
+/* inicio section */
+
+#home {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 0 6%;
+}
+
+#home-content {
+  max-width: 600px;
+}
+
+#home-content h1 {
+  font-size: 56px;
+  font-weight: 700;
+}
+
+#home-content p {
+  font-size: 16px;
+  margin: 20px 0 20px;
+}
+
+#home-content #bnt-box {
+  display: flex;
+  justify-content: space-between;
+  width: 345px;
+  height: 50px;
+}
+
+#bnt-box button {
+  width: 150px;
+  height: 100%;
+  background: var(--prussian-blue);
+  border: 2px solid var(--cerulean);
+  border-radius: 8px;
+  font-size: 19px;
+  font-weight: 600;
+  color: var(--white);
+  letter-spacing: 1px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+#bnt-box button:nth-child(2) {
+  background: transparent;
+  color: var(--white);
+}
+
+#bnt-box button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: var(--rich-black);
+  z-index: -1;
+  transition: 0.5s;
+}
+
+#bnt-box button:hover::before {
+  width: 100%;
+}
+
+/* fim section */
+
+/* inicio modal */
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 20px;
+  width: 60%;
+  border-radius: 8px;
+  position: relative;
+}
+
+.modal-content h1,
+label {
+  color: black;
+}
+
+.modal-content span {
+  font-size: 30px;
+  color: black;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* inicio Form */
+
+#input-container {
+  position: relative;
+  margin: 20px;
+}
+
+#input-container input {
+  width: 100%;
+  padding: 12px 8px;
+  font-size: 16px;
+  border: 1px solid var(--rich-black);
+  outline: none;
+}
+
+#input-container label {
+  position: absolute;
+  top: 12px;
+  left: 8px;
+  color: #999;
+  font-size: 16px;
+  pointer-events: none;
+  transition: 0.2s ease all;
+}
+
+#input-container input:focus + label,
+#input-container input:not(:placeholder-shown) + label {
+  top: -10px;
+  left: 6px;
+  font-size: 12px;
+  color: #333;
+  background: var(--white);
+  padding: 0 4px;
+}
+
+input[type="reset"],
+form a {
+  width: 100px;
+  margin: 20px;
+  padding: 12px 8px;
+  font-size: 16px;
+  font-weight: 600;
+  border: 1px solid var(--rich-black);
+  border-radius: 8px;
+  outline: none;
+  text-decoration: none;
+}
+
+form a {
+  color: black;
+  background-color: rgba(0, 128, 0, 0.74);
+}
+
+input[type="reset"] {
+  background-color: rgba(255, 0, 0, 0.74);
+}
+
+input[type="reset"]:hover,
+form a:hover {
+  color: var(--white);
+}
+
+/* inicio Form */
+
+/* fim modal */

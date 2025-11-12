@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="carrossel">
+      <div class="slide slide1"></div>
+      <div class="slide slide2"></div>
+      <div class="slide slide3"></div>
+    </div>
+
+    <div id="intro">
+      <h1 class="logo" id="full-logo">
+        <span id="letter-c">C</span><span id="rest">amarx</span>
+      </h1>
+    </div>
+
+    <nav>
+      <div id="corner-logo">Camarx</div>
+    </nav>
+
+    <section id="home">
+      <div id="home-content">
+        <h1>Camarx</h1>
+        <p>
+          Não perca mais tempo! Dê o play na sua próxima maratona com os
+          melhores filmes, séries e documentários em um só lugar. Assine agora e
+          transforme cada momento em uma experiência cinematográfica!
+        </p>
+        <div id="bnt-box">
+          <button id="bnt1">Entrar</button>
+          <button id="bnt2">Cadastro</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal 1 -->
+    <div id="modal1" class="modal">
+      <div class="modal-content">
+        <span class="close" data-modal="modal1">&times;</span>
+        <h1>Entrar</h1>
+        <form action method="post">
+          <div id="input-container">
+            <input type="text" name="txt1" id="txt1" placeholder=" " required />
+            <label for="">Nome Usuario</label>
+          </div>
+
+          <div id="input-container">
+            <input
+              type="password"
+              name="senha1"
+              id="senha1"
+              placeholder=" "
+              required
+            />
+            <label for="">Senha</label>
+          </div>
+
+          <input type="reset" value="Limpar" />
+          <a href="../carmax/usuarios/usuarios.html">Entrar</a>
+        </form>
+      </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div id="modal2" class="modal">
+      <div class="modal-content">
+        <span class="close" data-modal="modal2">&times;</span>
+        <h1>Cadastrar-se</h1>
+        <form action method="post">
+          <div id="input-container">
+            <input type="text" name="txt2" id="txt2" placeholder=" " required />
+            <label for="">Nome</label>
+          </div>
+
+          <div id="input-container">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder=" "
+              required
+            />
+            <label for="">Email</label>
+          </div>
+
+          <div id="input-container">
+            <input
+              type="password"
+              name="senha2"
+              id="senha2"
+              placeholder=" "
+              required
+            />
+            <label for="">Senha</label>
+          </div>
+
+          <div id="input-container">
+            <input
+              type="tel"
+              name="telefone"
+              id="telefone"
+              placeholder=" "
+              required
+            />
+            <label for="">Telefone</label>
+          </div>
+
+          <input type="reset" value="Limpar" />
+          <a href="../carmax/usuarios/usuarios.html">Entrar</a>
+        </form>
+      </div>
+    </div>
+
+    <script src="Javacript.js"></script>
+  </body>
+</html>
