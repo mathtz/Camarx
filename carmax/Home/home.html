@@ -1,323 +1,514 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header>
-      <a href="#" class="logo">Carmax</a>
-      <ul class="nav">
-        <li><a href="">Ação</a></li>
-        <li><a href="">Drama</a></li>
-        <li><a href="">Romance</a></li>
-        <li><a href="">Documentario</a></li>
-        <li><a href="">Susense</a></li>
-        <li><a href="">Ficção</a></li>
-        <li><a href="">Comedia</a></li>
-        <li><a href="">Terror</a></li>
-      </ul>
-      <div class="search">
-        <input type="text" placeholder="Search" />
-        <i class="bi bi-search"></i>
-      </div>
-    </header>
 
-    <div
-      class="carousel slide"
-      id="carouselDemo"
-      data-bs-wrap="true"
-      data-bs-ride="carousel"
-    >
-      <div class="carousel-inner">
-        <div class="carousel-item active" data-bs-interval="2000">
-          <img
-            src="../cartazes/Cartazes/comedia/Copilot_20251103_062413.png"
-            style="max-height: 630px; object-fit: cover"
-            alt=""
-            class="w-100"
-          />
-          <div class="carousel-caption">
-            <h5>slide 1</h5>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel illo
-              neque placeat! Ipsum, natus quas!
-            </p>
-            <button>Lorem.</button>
-          </div>
-        </div>
-        <div class="carousel-item" data-bs-interval="2000">
-          <img
-            src="../cartazes/Cartazes/documentario/Copilot_20251103_062406.png"
-            style="max-height: 630px; object-fit: cover"
-            alt=""
-            class="w-100"
-          />
-          <div class="carousel-caption">
-            <h5>slide 2</h5>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
-              voluptatum porro repellendus asperiores, neque eius.
-            </p>
-            <button>Lorem.</button>
-          </div>
-        </div>
-        <div class="carousel-item" data-bs-interval="2000">
-          <img
-            src="../cartazes/Cartazes/Terror/Copilot_20251103_062402.png"
-            style="max-height: 630px; object-fit: cover"
-            alt=""
-            class="w-100"
-          />
-          <div class="carousel-caption">
-            <h5>slide 3</h5>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt
-              possimus vitae nulla amet sint vero!
-            </p>
-            <button>Lorem.</button>
-          </div>
-        </div>
-        <div class="carousel-item" data-bs-interval="2000">
-          <img
-            src="../cartazes/Cartazes/acao/Copilot_20251113_144214.png"
-            style="max-height: 630px; object-fit: cover"
-            alt=""
-            class="w-100"
-          />
-          <div class="carousel-caption">
-            <h5>slide 4</h5>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
-              voluptatum porro repellendus asperiores, neque eius.
-            </p>
-            <button>Lorem.</button>
-          </div>
-        </div>
-        <div class="carousel-item" data-bs-interval="2000">
-          <img
-            src="../cartazes/Cartazes/Drama/Copilot_20251113_144211.png"
-            style="max-height: 630px; object-fit: cover"
-            alt=""
-            class="w-100"
-          />
-          <div class="carousel-caption">
-            <h5>slide 5</h5>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
-              voluptatum porro repellendus asperiores, neque eius.
-            </p>
-            <button>Lorem.</button>
-          </div>
-        </div>
-        <div class="carousel-item" data-bs-interval="2000">
-          <img
-            src="../cartazes/Cartazes/ficcao/Copilot_20251113_144207.png"
-            style="max-height: 630px; object-fit: cover"
-            alt=""
-            class="w-100"
-          />
-          <div class="carousel-caption">
-            <h5>slide 6</h5>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
-              voluptatum porro repellendus asperiores, neque eius.
-            </p>
-            <button>Lorem.</button>
-          </div>
-        </div>
-        <div class="carousel-item" data-bs-interval="2000">
-          <img
-            src="../cartazes/Cartazes/Romance/Copilot_20251113_143940.png"
-            style="max-height: 630px; object-fit: cover"
-            alt=""
-            class="w-100"
-          />
-          <div class="carousel-caption">
-            <h5>slide 7</h5>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
-              voluptatum porro repellendus asperiores, neque eius.
-            </p>
-            <button>Lorem.</button>
-          </div>
-        </div>
-        <div class="carousel-item" data-bs-interval="2000">
-          <img
-            src="../cartazes/Cartazes/Suspense/Copilot_20251113_144149.png"
-            style="max-height: 630px; object-fit: cover"
-            alt=""
-            class="w-100"
-          />
-          <div class="carousel-caption">
-            <h5>slide 8</h5>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
-              voluptatum porro repellendus asperiores, neque eius.
-            </p>
-            <button>Lorem.</button>
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <a href="#" class="logo">Carmax</a>
+    <ul class="nav">
+      <li><a href="">Ação</a></li>
+      <li><a href="">Drama</a></li>
+      <li><a href="">Romance</a></li>
+      <li><a href="">Documentario</a></li>
+      <li><a href="">Susense</a></li>
+      <li><a href="">Ficção</a></li>
+      <li><a href="">Comedia</a></li>
+      <li><a href="">Terror</a></li>
+    </ul>
+    <div class="search">
+      <input type="text" placeholder="Search" />
+      <i class="bi bi-search"></i>
+    </div>
+  </header>
+
+  <div class="carousel slide" id="carouselDemo" data-bs-wrap="true" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="2000">
+        <img src="../cartazes/Cartazes/comedia/Copilot_20251103_062413.png" style="max-height: 630px; object-fit: cover"
+          alt="" class="w-100" />
+        <div class="carousel-caption">
+          <h5>slide 1</h5>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel illo
+            neque placeat! Ipsum, natus quas!
+          </p>
+          <button>Lorem.</button>
         </div>
       </div>
-      <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#carouselDemo"
-        data-bs-slide="prev"
-      >
-        <span class="carousel-control-prev-icon"></span>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="../cartazes/Cartazes/documentario/Copilot_20251103_062406.png"
+          style="max-height: 630px; object-fit: cover" alt="" class="w-100" />
+        <div class="carousel-caption">
+          <h5>slide 2</h5>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+            voluptatum porro repellendus asperiores, neque eius.
+          </p>
+          <button>Lorem.</button>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="../cartazes/Cartazes/Terror/Copilot_20251103_062402.png" style="max-height: 630px; object-fit: cover"
+          alt="" class="w-100" />
+        <div class="carousel-caption">
+          <h5>slide 3</h5>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt
+            possimus vitae nulla amet sint vero!
+          </p>
+          <button>Lorem.</button>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="../cartazes/Cartazes/acao/Copilot_20251113_144214.png" style="max-height: 630px; object-fit: cover"
+          alt="" class="w-100" />
+        <div class="carousel-caption">
+          <h5>slide 4</h5>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+            voluptatum porro repellendus asperiores, neque eius.
+          </p>
+          <button>Lorem.</button>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="../cartazes/Cartazes/Drama/Copilot_20251113_144211.png" style="max-height: 630px; object-fit: cover"
+          alt="" class="w-100" />
+        <div class="carousel-caption">
+          <h5>slide 5</h5>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+            voluptatum porro repellendus asperiores, neque eius.
+          </p>
+          <button>Lorem.</button>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="../cartazes/Cartazes/ficcao/Copilot_20251113_144207.png" style="max-height: 630px; object-fit: cover"
+          alt="" class="w-100" />
+        <div class="carousel-caption">
+          <h5>slide 6</h5>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+            voluptatum porro repellendus asperiores, neque eius.
+          </p>
+          <button>Lorem.</button>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="../cartazes/Cartazes/Romance/Copilot_20251113_143940.png" style="max-height: 630px; object-fit: cover"
+          alt="" class="w-100" />
+        <div class="carousel-caption">
+          <h5>slide 7</h5>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+            voluptatum porro repellendus asperiores, neque eius.
+          </p>
+          <button>Lorem.</button>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="../cartazes/Cartazes/Suspense/Copilot_20251113_144149.png"
+          style="max-height: 630px; object-fit: cover" alt="" class="w-100" />
+        <div class="carousel-caption">
+          <h5>slide 8</h5>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+            voluptatum porro repellendus asperiores, neque eius.
+          </p>
+          <button>Lorem.</button>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselDemo" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+
+    <div class="button carousel-control-next" type="button" data-bs-target="#carouselDemo" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </div>
+
+    <div class="carousel-indicators">
+      <button type="button" class="active" data-bs-target="#carouselDemo" data-bs-slide-to="0">
+        <img src="../cartazes/Cartazes/comedia/dennis o pequeno caos.png" alt="" />
       </button>
-
-      <div
-        class="button carousel-control-next"
-        type="button"
-        data-bs-target="#carouselDemo"
-        data-bs-slide="next"
-      >
-        <span class="carousel-control-next-icon"></span>
-      </div>
-
-      <div class="carousel-indicators">
-        <button
-          type="button"
-          class="active"
-          data-bs-target="#carouselDemo"
-          data-bs-slide-to="0"
-        >
-          <img
-            src="../cartazes/Cartazes/comedia/dennis o pequeno caos.png"
-            alt=""
-          />
-        </button>
-        <button
-          type="button"
-          data-bs-target="#carouselDemo"
-          data-bs-slide-to="1"
-        >
-          <img
-            src="../cartazes/Cartazes/documentario/sempre ao lado deles.png"
-            alt=""
-          />
-        </button>
-        <button
-          type="button"
-          data-bs-target="#carouselDemo"
-          data-bs-slide-to="2"
-        >
-          <img src="../cartazes/Cartazes/Terror/sorriso mortal.png" alt="" />
-        </button>
-        <button
-          type="button"
-          data-bs-target="#carouselDemo"
-          data-bs-slide-to="3"
-        >
-          <img
-            src="../cartazes/Cartazes/acao/John wick.jpeg"
-            style="max-height: 180px"
-            alt=""
-          />
-        </button>
-        <button
-          type="button"
-          class="active"
-          data-bs-target="#carouselDemo"
-          data-bs-slide-to="4"
-        >
-          <img
-            src="../cartazes/Cartazes/Drama/Depois do universo.jpeg"
-            style="max-height: 180px"
-            alt=""
-          />
-        </button>
-        <button
-          type="button"
-          data-bs-target="#carouselDemo"
-          data-bs-slide-to="5"
-        >
-          <img
-            src="../cartazes/Cartazes/ficcao/Donnie darko.jpeg"
-            style="max-height: 180px"
-            alt=""
-          />
-        </button>
-        <button
-          type="button"
-          class="active"
-          data-bs-target="#carouselDemo"
-          data-bs-slide-to="6"
-        >
-          <img
-            src="../cartazes/Cartazes/Romance/Dias perfeitos.jpeg"
-            style="max-height: 180px"
-            alt=""
-          />
-        </button>
-        <button
-          type="button"
-          data-bs-target="#carouselDemo"
-          data-bs-slide-to="7"
-        >
-          <img src="../cartazes/Cartazes/Suspense/Fuja.jpeg" alt="" />
-        </button>
-      </div>
+      <button type="button" data-bs-target="#carouselDemo" data-bs-slide-to="1">
+        <img src="../cartazes/Cartazes/documentario/sempre ao lado deles.png" alt="" />
+      </button>
+      <button type="button" data-bs-target="#carouselDemo" data-bs-slide-to="2">
+        <img src="../cartazes/Cartazes/Terror/sorriso mortal.png" alt="" />
+      </button>
+      <button type="button" data-bs-target="#carouselDemo" data-bs-slide-to="3">
+        <img src="../cartazes/Cartazes/acao/John wick.jpeg" style="max-height: 180px" alt="" />
+      </button>
+      <button type="button" class="active" data-bs-target="#carouselDemo" data-bs-slide-to="4">
+        <img src="../cartazes/Cartazes/Drama/Depois do universo.jpeg" style="max-height: 180px" alt="" />
+      </button>
+      <button type="button" data-bs-target="#carouselDemo" data-bs-slide-to="5">
+        <img src="../cartazes/Cartazes/ficcao/Donnie darko.jpeg" style="max-height: 180px" alt="" />
+      </button>
+      <button type="button" class="active" data-bs-target="#carouselDemo" data-bs-slide-to="6">
+        <img src="../cartazes/Cartazes/Romance/Dias perfeitos.jpeg" style="max-height: 180px" alt="" />
+      </button>
+      <button type="button" data-bs-target="#carouselDemo" data-bs-slide-to="7">
+        <img src="../cartazes/Cartazes/Suspense/Fuja.jpeg" alt="" />
+      </button>
     </div>
+  </div>
 
-    <div id="section">
-      <sectio id="home">
-        <div id="home-content">
-          <div>
-            <h2>Ação</h2>
-          </div>
-          <div>
-            <h2>Terror</h2>
-          </div>
-          <div>
-            <h2>Sugestões que você vai adorar</h2>
-          </div>
-          <div>
-            <h2>Comedia</h2>
-          </div>
-          <div>
-            <h2>Documentario</h2>
-          </div>
-          <div>
-            <h2>Novidades</h2>
-          </div>
-          <div>
-            <h2>Romance</h2>
-          </div>
-          <div>
-            <h2>Ficção</h2>
-          </div>
-          <div>
-            <h2>O público ama</h2>
-          </div>
-          <div>
-            <h2>Suspense</h2>
-          </div>
-          <div>
-            <h2>Drama</h2>
+  <div id="section">
+    <sectio id="home">
+      <div id="home-content">
+        <div>
+          <h2>Romance</h2>
+        </div>
+        <div id="carouselExample" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="container">
+                <button>
+                  <div class="card01">
+                    <img src="../cartazes/Cartazes/Romance/Como eu era antes de vc.jpeg" alt="Cartaz 1" />
+                    <div class="conteudo">
+                      <h3>Antes Que o Mundo Pare</h3>
+                      <p>Lou trabalha cuidando de um homem rico e amargo que perdeu a vontade de viver após um acidente.
+                        Com seu jeito leve e espontâneo, ela acaba quebrando as barreiras dele e o faz redescobrir a
+                        beleza nas pequenas coisas. O que começa como um emprego vira um laço profundo e improvável, que
+                        ensina aos dois que o amor não precisa durar pra sempre pra ser inesquecível.</p>
+                    </div>
+                  </div>
+                </button>
+                <button>
+                  <div class="card01">
+                    <img src="../cartazes/Cartazes/Romance/Como perder um homem em 10 dias.jpeg" alt="Cartaz 2" />
+                    <div class="conteudo">
+                      <h3>Manual Antiamor em 10 Passos</h3>
+                      <p>Andie é uma jornalista decidida a provar que pode fazer qualquer homem desistir dela em dez
+                        dias,
+                        tudo por uma matéria ousada. Benjamin, um publicitário confiante, aposta que consegue fazer
+                        qualquer mulher se apaixonar nesse mesmo tempo. Quando seus caminhos se cruzam, ambos entram num
+                        jogo perigoso onde o plano é manipular o outro — mas o resultado é o oposto: eles acabam se
+                        apaixonando de verdade.</p>
+                    </div>
+                  </div>
+                </button>
+                <button>
+                  <div class="card01">
+                    <img src="../cartazes/Cartazes/Romance/Malcom e Marie.jpeg" alt="Cartaz 3" />
+                    <div class="conteudo">
+                      <h3>No Silêncio de Nós Dois</h3>
+                      <p>baseado no livro de Colleen Hoover, é a história de Morgan e sua filha adolescente, Clara, que
+                        precisam enfrentar os desafios de suas personalidades opostas e a dor de um segredo devastador
+                        revelado após a morte trágica do marido de Morgan e pai de Clara, Chris</p>
+                    </div>
+                  </div>
+                </button>
+                <button>
+                  <div class="card01">
+                    <img src="../cartazes/Cartazes/Romance/A lista da minha vida.png" alt="Cartaz 4" />
+                    <div class="conteudo">
+                      <h3>O Peso do Que Ficou</h3>
+                      <p>Depois de semanas tentando ignorar sinais de desgaste, Clara e Augusto passam uma última noite
+                        juntos na casa onde tudo começou e terminou. Entre lembranças que doem e verdades que nunca
+                        foram
+                        ditas, eles revisitam escolhas, medos e promessas quebradas. Ao longo das horas, entre recaídas
+                        e
+                        afastamentos, precisam decidir se ainda existe futuro ou se o amor deles virou apenas a memória
+                        do
+                        que um dia foi.</p>
+                    </div>
+                  </div>
+                </button>
+                <button>
+                  <div class="card01">
+                    <img src="../cartazes/Cartazes/Romance/Com amor simon.jpeg" alt="Cartaz 5" />
+                    <div class="conteudo">
+                      <h3>Cartas do Coração</h3>
+                      <p>Luca é um adolescente que começa a receber e-mails misteriosos de um admirador secreto da
+                        escola.
+                        Tentando descobrir quem está por trás das mensagens, ele passa a se conhecer melhor e a
+                        enfrentar o medo de se assumir. Quando o anonimato ameaça ruir, ele percebe que às vezes o amor
+                        precisa de coragem pra sair das sombras.</p>
+                    </div>
+                  </div>
+                </button>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="container">
+                <button>
+                  <div class="card01">
+                    <img src="../cartazes/Cartazes/Romance/Me chame pelo seu nome.jpeg" alt="Cartaz 6" />
+                    <div class="conteudo">
+                      <h3>Sob o Seu Sol</h3>
+                      <p>Durante um verão na Itália, o jovem Elio se apaixona por Oliver, um visitante mais velho e
+                        carismático que fica hospedado em sua casa. O relacionamento dos dois floresce em meio a
+                        conversas, música e calor, até que o tempo os separa. Anos depois, Elio entende que aquele amor
+                        o
+                        moldou pra sempre uma lembrança doce e dolorosa do que é amar pela primeira vez.</p>
+                    </div>
+                  </div>
+                </button>
+                <button>
+                  <div class="card01">
+                    <img src="../cartazes/Cartazes/Romance/Para sempre.jpeg" alt="Cartaz 7" />
+                    <div class="conteudo">
+                      <h3>Eternamente Nós</h3>
+                      <p>Paige e Leo formavam o casal perfeito até que um acidente faz ela perder todas as lembranças do
+                        casamento. Determinado a reconquistá-la, Leo tenta reviver cada lembrança e fazê-la se apaixonar
+                        de novo. Enquanto ele luta pelo passado, ela tenta descobrir quem realmente é. Juntos, descobrem
+                        que o amor verdadeiro não depende da memória, mas da escolha diária de ficar.</p>
+                    </div>
+                  </div>
+                </button>
+                <button>
+                  <div class="card01">
+                    <img src="../cartazes/Cartazes/Romance/A vdd nua e crua.jpeg" alt="Cartaz 8" />
+                    <div class="conteudo">
+                      <h3>A Realidade do Amor</h3>
+                      <p>Abby é uma apresentadora cética que acredita que o amor é uma invenção comercial. Mike, um
+                        comentarista de TV machista e provocador, vive para provar seu ponto de vista sobre
+                        relacionamentos. Quando os dois são obrigados a trabalhar juntos, o embate entre razão e emoção
+                        vira uma guerra divertida até que a química entre eles derruba todas as teorias.</p>
+                    </div>
+                  </div>
+                </button>
+                <button>
+                  <div class="card01">
+                    <img src="../cartazes/Cartazes/Romance/365 Razoes pra você ficar.jpeg" alt="Cartaz 9" />
+                    <div class="conteudo">
+                      <h3>365 Razões Pra Ficar</h3>
+                      <p>Tom relembra cada momento de seu relacionamento com Summer dos primeiros olhares até o
+                        término
+                        inesperado. A história é contada fora de ordem, como um quebra-cabeça emocional que mostra o
+                        contraste entre o amor idealizado e o real. No fim, ele entende que algumas pessoas entram na
+                        vida
+                        da gente só pra ensinar a próxima vez a ser melhor.</p>
+                    </div>
+                  </div>
+                </button>
+                <button>
+                  <div class="card01">
+                    <img src="../cartazes/Cartazes/Romance/Para todos os garotos q ja amei.jpg" alt="Cartaz 10" />
+                    <div class="conteudo">
+                      <h3>Para Todos os Crushes Que Já Tive</h3>
+                      <p>Lara Jean guarda cartas secretas pra cada garoto de quem já gostou, mas nunca teve coragem de
+                        enviar. Quando essas cartas são misteriosamente entregues, sua vida vira um caos: antigos amores
+                        reaparecem, sentimentos confusos emergem e ela precisa encarar o que sempre evitou. Entre
+                        risadas,
+                        vergonha e autodescoberta, Lara aprende que o amor é mais confuso e mais bonito do que ela
+                        imaginava.</p>
+                    </div>
+                  </div>
+                </button>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
         </div>
-      </sectio>
-    </div>
+        <div>
+          <h2>Terror</h2>
+        </div>
+        <div id="carouselExample" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="container">
+                <button>
+                  <div class="card01">
+                    <img src="../cartazes/Cartazes/Romance/Como eu era antes de vc.jpeg" alt="Cartaz 1" />
+                    <div class="conteudo">
+                      <h3>Antes Que o Mundo Pare</h3>
+                      <p>Lou trabalha cuidando de um homem rico e amargo que perdeu a vontade de viver após um acidente.
+                        Com seu jeito leve e espontâneo, ela acaba quebrando as barreiras dele e o faz redescobrir a
+                        beleza nas pequenas coisas. O que começa como um emprego vira um laço profundo e improvável, que
+                        ensina aos dois que o amor não precisa durar pra sempre pra ser inesquecível.</p>
+                    </div>
+                  </div>
+                </button>
+                <button>
+                  <div class="card01">
+                    <img src="../cartazes/Cartazes/Romance/Como perder um homem em 10 dias.jpeg" alt="Cartaz 2" />
+                    <div class="conteudo">
+                      <h3>Manual Antiamor em 10 Passos</h3>
+                      <p>Andie é uma jornalista decidida a provar que pode fazer qualquer homem desistir dela em dez
+                        dias,
+                        tudo por uma matéria ousada. Benjamin, um publicitário confiante, aposta que consegue fazer
+                        qualquer mulher se apaixonar nesse mesmo tempo. Quando seus caminhos se cruzam, ambos entram num
+                        jogo perigoso onde o plano é manipular o outro — mas o resultado é o oposto: eles acabam se
+                        apaixonando de verdade.</p>
+                    </div>
+                  </div>
+                </button>
+                <button>
+                  <div class="card01">
+                    <img src="../cartazes/Cartazes/Romance/Malcom e Marie.jpeg" alt="Cartaz 3" />
+                    <div class="conteudo">
+                      <h3>No Silêncio de Nós Dois</h3>
+                      <p>baseado no livro de Colleen Hoover, é a história de Morgan e sua filha adolescente, Clara, que
+                        precisam enfrentar os desafios de suas personalidades opostas e a dor de um segredo devastador
+                        revelado após a morte trágica do marido de Morgan e pai de Clara, Chris</p>
+                    </div>
+                  </div>
+                </button>
+                <button>
+                  <div class="card01">
+                    <img src="../cartazes/Cartazes/Romance/A lista da minha vida.png" alt="Cartaz 4" />
+                    <div class="conteudo">
+                      <h3>O Peso do Que Ficou</h3>
+                      <p>Depois de semanas tentando ignorar sinais de desgaste, Clara e Augusto passam uma última noite
+                        juntos na casa onde tudo começou e terminou. Entre lembranças que doem e verdades que nunca
+                        foram
+                        ditas, eles revisitam escolhas, medos e promessas quebradas. Ao longo das horas, entre recaídas
+                        e
+                        afastamentos, precisam decidir se ainda existe futuro ou se o amor deles virou apenas a memória
+                        do
+                        que um dia foi.</p>
+                    </div>
+                  </div>
+                </button>
+                <button>
+                  <div class="card01">
+                    <img src="../cartazes/Cartazes/Romance/Com amor simon.jpeg" alt="Cartaz 5" />
+                    <div class="conteudo">
+                      <h3>Cartas do Coração</h3>
+                      <p>Luca é um adolescente que começa a receber e-mails misteriosos de um admirador secreto da
+                        escola.
+                        Tentando descobrir quem está por trás das mensagens, ele passa a se conhecer melhor e a
+                        enfrentar o medo de se assumir. Quando o anonimato ameaça ruir, ele percebe que às vezes o amor
+                        precisa de coragem pra sair das sombras.</p>
+                    </div>
+                  </div>
+                </button>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="container">
+                <button>
+                  <div class="card01">
+                    <img src="../cartazes/Cartazes/Romance/Me chame pelo seu nome.jpeg" alt="Cartaz 6" />
+                    <div class="conteudo">
+                      <h3>Sob o Seu Sol</h3>
+                      <p>Durante um verão na Itália, o jovem Elio se apaixona por Oliver, um visitante mais velho e
+                        carismático que fica hospedado em sua casa. O relacionamento dos dois floresce em meio a
+                        conversas, música e calor, até que o tempo os separa. Anos depois, Elio entende que aquele amor
+                        o
+                        moldou pra sempre uma lembrança doce e dolorosa do que é amar pela primeira vez.</p>
+                    </div>
+                  </div>
+                </button>
+                <button>
+                  <div class="card01">
+                    <img src="../cartazes/Cartazes/Romance/Para sempre.jpeg" alt="Cartaz 7" />
+                    <div class="conteudo">
+                      <h3>Eternamente Nós</h3>
+                      <p>Paige e Leo formavam o casal perfeito até que um acidente faz ela perder todas as lembranças do
+                        casamento. Determinado a reconquistá-la, Leo tenta reviver cada lembrança e fazê-la se apaixonar
+                        de novo. Enquanto ele luta pelo passado, ela tenta descobrir quem realmente é. Juntos, descobrem
+                        que o amor verdadeiro não depende da memória, mas da escolha diária de ficar.</p>
+                    </div>
+                  </div>
+                </button>
+                <button>
+                  <div class="card01">
+                    <img src="../cartazes/Cartazes/Romance/A vdd nua e crua.jpeg" alt="Cartaz 8" />
+                    <div class="conteudo">
+                      <h3>A Realidade do Amor</h3>
+                      <p>Abby é uma apresentadora cética que acredita que o amor é uma invenção comercial. Mike, um
+                        comentarista de TV machista e provocador, vive para provar seu ponto de vista sobre
+                        relacionamentos. Quando os dois são obrigados a trabalhar juntos, o embate entre razão e emoção
+                        vira uma guerra divertida até que a química entre eles derruba todas as teorias.</p>
+                    </div>
+                  </div>
+                </button>
+                <button>
+                  <div class="card01">
+                    <img src="../cartazes/Cartazes/Romance/365 Razoes pra você ficar.jpeg" alt="Cartaz 9" />
+                    <div class="conteudo">
+                      <h3>365 Razões Pra Ficar</h3>
+                      <p>Tom relembra cada momento de seu relacionamento com Summer dos primeiros olhares até o
+                        término
+                        inesperado. A história é contada fora de ordem, como um quebra-cabeça emocional que mostra o
+                        contraste entre o amor idealizado e o real. No fim, ele entende que algumas pessoas entram na
+                        vida
+                        da gente só pra ensinar a próxima vez a ser melhor.</p>
+                    </div>
+                  </div>
+                </button>
+                <button>
+                  <div class="card01">
+                    <img src="../cartazes/Cartazes/Romance/Para todos os garotos q ja amei.jpg" alt="Cartaz 10" />
+                    <div class="conteudo">
+                      <h3>Para Todos os Crushes Que Já Tive</h3>
+                      <p>Lara Jean guarda cartas secretas pra cada garoto de quem já gostou, mas nunca teve coragem de
+                        enviar. Quando essas cartas são misteriosamente entregues, sua vida vira um caos: antigos amores
+                        reaparecem, sentimentos confusos emergem e ela precisa encarar o que sempre evitou. Entre
+                        risadas,
+                        vergonha e autodescoberta, Lara aprende que o amor é mais confuso e mais bonito do que ela
+                        imaginava.</p>
+                    </div>
+                  </div>
+                </button>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <div>
+          <h2>Sugestões que você vai adorar</h2>
+        </div>
+        <div>
+          <h2>Comedia</h2>
+        </div>
+        <div>
+          <h2>Documentario</h2>
+        </div>
+        <div>
+          <h2>Novidades</h2>
+        </div>
+        <div>
+          <h2>Ação</h2>
+        </div>
+        <div>
+          <h2>Ficção</h2>
+        </div>
+        <div>
+          <h2>O público ama</h2>
+        </div>
+        <div>
+          <h2>Suspense</h2>
+        </div>
+        <div>
+          <h2>Drama</h2>
+        </div>
+    </sectio>
+  </div>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
