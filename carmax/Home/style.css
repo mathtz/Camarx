@@ -102,9 +102,11 @@ header {
   width: 120px;
   display: block;
 }
+
 .carousel-indicators button {
   width: max-content !important;
 }
+
 .carousel-indicators {
   position: absolute;
   top: 430px;
@@ -112,6 +114,7 @@ header {
   transform: translateX(-50%);
   z-index: 2;
 }
+
 .carousel-indicators button.active img {
   border: 3px solid var(--prussian-blue);
 }
@@ -132,4 +135,43 @@ header {
   padding: 15px;
   border-radius: 8px;
   max-width: 40%;
+}
+
+button {
+  background-color: #000;
+  color: #ccc;
+}
+
+.container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card01 {
+  display: flex;
+  align-items: flex-start;
+  border: 1px solid #ccc;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  max-height: 220px;
+}
+
+.card01 img {
+  height: 220px;
+  cursor: pointer;
+}
+
+.conteudo {
+  max-width: 0;
+  /* começa invisível */
+  overflow: hidden;
+  transition: max-width 0.5s ease, padding 0.5s ease;
+  padding: 0;
+}
+
+.card01:hover .conteudo {
+  max-width: 619px;
+  /* expande ao hover */
+  padding: 10px;
 }
