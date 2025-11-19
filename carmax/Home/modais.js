@@ -314,7 +314,7 @@ document.getElementById("bntA10").onclick = () => {
 
 // Fim Modais Ação
 
-// Inicio Modais Ação
+// Inicio Modais Ficção
 document.getElementById("bntF01").onclick = () => {
   document.getElementById("modalF01").style.display = "block";
 };
@@ -355,4 +355,4 @@ document.getElementById("bntF10").onclick = () => {
   document.getElementById("modalF10").style.display = "block";
 };
 
-// Fim Modais Ação
+// Fim Modais Ficção
