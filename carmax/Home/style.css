@@ -36,6 +36,7 @@ header {
 .logo {
   font-size: 35px;
   color: var(--white);
+  text-decoration: none;
   font-weight: 800;
   letter-spacing: 1px;
 }
@@ -142,10 +143,12 @@ header {
 
 .carousel-control-prev {
   left: 1px;
+  width: 100px;
 }
 
 .carousel-control-next {
   right: 1px;
+  width: 100px;
 }
 
 .carousel-caption {
@@ -237,4 +240,22 @@ label {
 
 h2 {
   color: var(--white);
+}
+
+.estrelas{
+  display: flex;
+  flex-direction: row;
+}
+
+.estrelas i {
+  font-size: 30px;
+  margin: 2%;
+}
+
+.continuar{
+  background-color: red;
+  color: var(--white);
+  padding: 8px;
+  border: 1px solid var(--preto);
+  border-radius: 40px;
 }
