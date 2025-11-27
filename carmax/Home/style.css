@@ -164,11 +164,12 @@ header {
 button {
   background-color: #000;
   color: #ccc;
+  border: 1px solid var(--white);
 }
 
 .container {
   display: flex;
-  gap: 20px;
+  gap: 25px;
   justify-content: center;
 }
 
@@ -242,7 +243,7 @@ h2 {
   color: var(--white);
 }
 
-.estrelas{
+.estrelas {
   display: flex;
   flex-direction: row;
 }
@@ -252,10 +253,251 @@ h2 {
   margin: 2%;
 }
 
-.continuar{
+.continuar {
   background-color: red;
   color: var(--white);
   padding: 8px;
   border: 1px solid var(--preto);
   border-radius: 40px;
+}
+
+/*  */
+
+.wrapper {
+  width: 100%;
+  height: 65vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.deposito {
+  height: 400px;
+  display: flex;
+  justify-content: start;
+  flex-wrap: nowrap;
+}
+
+.card-deposito {
+  width: 80px;
+  border-radius: 0.75rem;
+  background-size: cover;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 2rem;
+  margin: 0 10px;
+  display: flex;
+  align-items: flex-end;
+  transition: 1s cubic-bezier(0.28, -0.03, 0, 0.8);
+  box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.8);
+}
+
+.card-deposito > .row {
+  color: white;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.card-deposito > .row > .icon {
+  background: #223;
+  color: white;
+  border-radius: 50%;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+}
+
+.card-deposito > .row > .description {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+  height: 80px;
+  width: 520px;
+  opacity: 0;
+  transform: translateY(30px);
+  transition-delay: 0.3s;
+  transition: all 0.3s ease;
+}
+
+.description p {
+  color: #b0b0ba;
+  padding: 5px;
+}
+
+.description h4 {
+  text-transform: uppercase;
+}
+
+.card-deposito:hover {
+  width: 600px;
+}
+
+.card-deposito:hover .description {
+  opacity: 1 !important;
+  transform: translate(0) !important;
+}
+
+/*  */
+
+.imagen01 {
+  background-image: url("./Horizontal/ecos\ do\ passado.png");
+}
+
+.imagen02 {
+  background-image: url("./Horizontal/Ethernal\ sunshine\ of\ the\ spotless\ mind.png");
+}
+
+.imagen03 {
+  background-image: url("./Horizontal/malcon\ e\ marie.png");
+}
+
+.imagen04 {
+  background-image: url("./Horizontal/ritmo\ da\ manha.png");
+}
+
+.imagen05 {
+  background-image: url("./Horizontal/offline\ para\ sempre.png");
+}
+
+.imagen06 {
+  background-image: url("./Horizontal/baba\ em\ apuros.png");
+}
+
+.imagen07 {
+  background-image: url("./Horizontal/entre\ nos.png");
+}
+
+.imagen08 {
+  background-image: url("./Horizontal/novos\ mutantes.png");
+}
+
+.imagen09 {
+  background-image: url("./Horizontal/clique\ errado.png");
+}
+
+.imagen10 {
+  background-image: url("./Horizontal/365\ Razoes\ pra\ você\ ficar.png");
+}
+
+.imagen11 {
+  background-image: url("./Horizontal/Como\ perder\ um\ homem\ em\ 10\ dias.png");
+}
+
+.imagen12 {
+  background-image: url("./Horizontal/coherence.png");
+}
+
+.imagen13 {
+  background-image: url("./Horizontal/querido\ menino.png");
+}
+
+.imagen14 {
+  background-image: url("./Horizontal/sonho\ de\ liberdade.png");
+}
+
+.imagen15 {
+  background-image: url("./Horizontal/pesadelo\ noturno.png");
+}
+
+.imagen16 {
+  background-image: url("./Horizontal/o\ video.png");
+}
+
+.imagen17 {
+  background-image: url("./Horizontal/o\ homen\ invisivel.png");
+}
+
+.imagen18 {
+  background-image: url("./Horizontal/o\ protetor.png");
+}
+
+.imagen19 {
+  background-image: url("./Horizontal/luzes\ que\ não\ entram.png");
+}
+
+.imagen20 {
+  background-image: url("./Horizontal/reflexo\ mortal.png");
+}
+
+.imagen21 {
+  background-image: url("./Horizontal/dormir\ de\ olhos\ abertos.png");
+}
+
+.imagen22 {
+  background-image: url("./Horizontal/jantar\ caotico.png");
+}
+
+.imagen23 {
+  background-image: url("./Horizontal/fragmentados.png");
+}
+
+.imagen24 {
+  background-image: url("./Horizontal/Nobody.png");
+}
+
+/* Estilos do footer */
+.footer {
+  background-color: #111;
+  padding: 40px 20px;
+  color: #fff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Logo e descrição */
+.footer-logo {
+  flex: 1 1 250px;
+  margin-bottom: 20px;
+}
+
+.footer-logo h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-right: 95%;
+}
+
+.footer-logo p {
+  font-size: 14px;
+  margin-right: 40%;
+}
+
+/* Redes sociais */
+.footer-social {
+  width: 20%;
+  margin-bottom: 20px;
+}
+
+.footer-social h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.footer-social a {
+  display: block;
+  margin-bottom: 8px;
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-social a:hover {
+  color: #e50914; /* Cor de destaque ao passar o mouse */
+}
+
+/* Copyright */
+.footer-copy {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 14px;
 }
