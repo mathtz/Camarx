@@ -55,3 +55,35 @@ body {
 .imagen {
   border: 2px solid white;
 }
+
+@media (max-width: 1000px) {
+  #corner-logo {
+    display: block; /* mostra o logo no celular */
+    opacity: 1; /* deixa visível */
+    font-size: 1.5em; /* reduz o tamanho para caber melhor */
+    top: 20px; /* ajusta posição */
+    left: 30px; /* aproxima da borda */
+  }
+  #img-conteiner {
+    flex-direction: row; /* Empilha os elementos verticalmente */
+    flex-wrap: wrap;
+    height: auto; /* Ajusta a altura para caber o conteúdo */
+    padding: 20px; /* Reduz o padding lateral */
+    gap: 20px; /* Diminui o espaço entre os itens */
+    margin-top: 35%;
+  }
+
+  #img {
+    justify-content: center; /* Centraliza cada bloco */
+    padding: 10px;
+  }
+
+  .imagen {
+    width: 70px; /* Reduz o tamanho da imagem */
+    height: auto;
+  }
+
+  #img h3 {
+    font-size: 16px; /* Ajusta o tamanho do texto */
+  }
+}
