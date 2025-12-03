@@ -34,6 +34,23 @@ setTimeout(() => {
   document.body.style.overflow = "auto";
 }, 6000);
 
+setTimeout(() => {
+  // Esconde a intro e mostra a home
+  const intro = document.getElementById("intro");
+  const home = document.getElementById("home");
+
+  if (intro) intro.style.display = "none";
+
+  if (home) {
+    // Se você estiver usando CSS com .show:
+    home.classList.add("show");
+    // Caso não use .show, pode usar display:
+    // home.style.display = "block";
+  }
+
+  document.body.style.overflow = "auto";
+}, 6000);
+
 // Fim Intro
 
 // inicio Modal
