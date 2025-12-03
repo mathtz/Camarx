@@ -302,3 +302,107 @@ form a:hover {
 /* inicio Form */
 
 /* fim modal */
+
+@media (max-width: 1000px) {
+  .logo {
+    font-size: 2.5em; /* diminui o tamanho da fonte */
+    text-align: center; /* centraliza melhor em telas pequenas */
+  }
+
+  #intro {
+    height: auto; /* evita ocupar 100vh em celulares */
+    padding: 20px; /* dá um respiro nas bordas */
+  }
+  #corner-logo {
+    display: block; /* mostra o logo no celular */
+    opacity: 0; /* deixa visível */
+    font-size: 1.5em; /* reduz o tamanho para caber melhor */
+    top: 20px; /* ajusta posição */
+    left: 30px; /* aproxima da borda */
+  }
+  #home {
+    flex-direction: column; /* conteúdo empilhado */
+    justify-content: center; /* centraliza verticalmente */
+    padding: 20px; /* respiro nas laterais */
+    height: auto; /* evita ocupar 100vh em celulares */
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 1s ease-in-out;
+  }
+
+  #home.show {
+    opacity: 1; /* aparece suavemente */
+    pointer-events: auto; /* volta a ser clicável */
+  }
+
+  #home-content {
+    max-width: 100%; /* ocupa toda a largura disponível */
+    text-align: center; /* centraliza texto */
+  }
+
+  #home-content h1 {
+    font-size: 36px; /* reduz título */
+    margin-top: 60%;
+    margin-right: 36%;
+  }
+
+  #home-content p {
+    font-size: 14px; /* texto mais leve */
+    margin: 15px 0; /* menos espaçamento */
+    text-align: justify;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  #home-content #bnt-box {
+    flex-direction: row; /* botões empilhados */
+    width: 90%; /* ocupa toda a largura */
+    height: auto;
+    gap: 10px; /* espaço entre botões */
+    align-items: center;
+  }
+
+  #bnt-box button {
+    width: 80%; /* botões mais largos e adaptáveis */
+    font-size: 16px; /* fonte menor */
+    left: 5%;
+  }
+  .modal-content {
+    width: 70%; /* ocupa quase toda a largura da tela */
+    margin: 20%; /* centraliza melhor verticalmente */
+    padding: 15px; /* reduz padding para caber melhor */
+    left: -9%;
+  }
+
+  .modal-content h1 {
+    font-size: 24px; /* título menor */
+    text-align: center; /* centraliza título */
+  }
+
+  #input-container {
+    width: 85%; /* menos espaçamento lateral */
+    left: -5%;
+  }
+
+  #input-container input {
+    font-size: 14px; /* fonte menor nos inputs */
+    padding: 10px 6px;
+  }
+
+  #input-container label {
+    font-size: 14px; /* label menor */
+  }
+
+  input[type="reset"],
+  form a {
+    width: 40%; /* botões ocupam toda a largura */
+    margin: 10px 0; /* espaço entre eles */
+    font-size: 14px;
+  }
+
+  .close {
+    font-size: 24px; /* botão de fechar menor */
+    top: 5px;
+    right: 10px;
+  }
+}
