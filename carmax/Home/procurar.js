@@ -156,3 +156,16 @@ window.addEventListener("click", (e) => {
     }
   });
 });
+
+modais.forEach((item) => {
+  // tenta encontrar o botão pelo mesmo id do modal (ou outro padrão que você definir)
+  const botao = document.getElementById("btn-" + item.modalId);
+  const modal = document.getElementById(item.modalId);
+
+  if (botao && modal) {
+    // abre o modal ao clicar no botão
+    botao.addEventListener("click", () => {
+      modal.style.display = "block";
+    });
+  }
+});
